@@ -402,7 +402,7 @@ ul.et_pb_member_social_links li > span {
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">CONTÁCTENOS</h2>
-                  <form ACTION="<%=MM_editAction%>" METHOD="POST" name="form1" onSubmit="return checkform(this);">
+                  <form ACTION="http://200.105.200.147/elbuenpastor/correo/2026/enviar.php" METHOD="POST" name="form1" onSubmit="return checkform(this);">
                       <div class="col-lg-12">
                         <div class="row">
                           <div class="col-md-6">
@@ -420,9 +420,15 @@ ul.et_pb_member_social_links li > span {
                           </div>
                           <div class="col-md-6">
                             <div class="form-group">
-                              <input name="numero" type="tel" class="form-control"  placeholder="Tu Telefono *" required data-validation-required-message="Por favor escribe tu Numero de telefono." />
-<p class="help-block text-danger">
-  <textarea name="comentario" cols="30" class="visitante" id="comentario"  placeholder="Tu Comentario o Mensaje *" required data-validation-required-message="por favor esccribe tu comentario o mensaje."></textarea>
+                              <p>&nbsp;                                </p>
+                              <p>
+                                <input type="text" id="asunto" name="asunto" placeholder="Asunto *" required>
+                              </p>
+                              <p>
+                                <input name="numero" type="tel" class="form-control"  placeholder="Tu Telefono *" required data-validation-required-message="Por favor escribe tu Numero de telefono." />
+                              </p>
+                              <p class="help-block text-danger">
+                                <textarea name="mensaje" cols="30" class="visitante" id="mensaje"  placeholder="Tu Comentario o Mensaje *" required data-validation-required-message="por favor esccribe tu comentario o mensaje."></textarea>
 </p>
                               <input name="fecha" type="hidden" id="fecha" value="">
                             </div>
